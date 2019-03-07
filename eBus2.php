@@ -14,29 +14,20 @@ $_SESSION['txtTotal'] = $totalValue2;
  */
 ?>
 
-<!DOCTYPE html>
-<?php
-session_start();
-$fullNameVal = "";
-$totalValue = "";
-/*
- * Create a session variable for the mobile number
- */
-$totalValue = $_POST['txtTotal'];
-$_SESSION['txtName'] = $fullNameVal;
-$_SESSION['txtTotal'] = $totalVal2;
-$_SEESION['txtNum'] = $NumberVal;
-/*
- * Allocate the mobile number seesion variable to a textbox
- */
-?>
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>eBusiness 2</title>
+        <title>Personal Details</title>
         
     </head>
     <body>
+        <style>
+              body {
+                background-image: url("Pattern2.png");
+                background-repeat: repeat-x;
+            }
+        </style>
         <div class="form">
             <form name="Details" method="post" action="ebus3.php">
                 <center>
@@ -50,12 +41,12 @@ $_SEESION['txtNum'] = $NumberVal;
                             <td><input type="text" id="txtName" name="txtName" value=""></td>
                         </tr>
                         <tr>
-                            <td>Phone Number</td>
-                            <td><input type="text" id="txtNum" name="txtNum" value=""></td>
+                            <td>E-Mail</td>
+                            <td><input type="email" id="txtNum" name="txtNum" value=""></td>
                         </tr>
                         <tr>
-                            <td>Password</td>
-                            <td><input type="text" id="txtPassword" name="txtPassword" value=""></td>
+                            <td>PIN</td>
+                            <td><input type="password" type="number" id="txtPassword" name="txtPassword" min="1" max="4" value=""></td>
                         </tr>
                         <tr>
                             

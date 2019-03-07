@@ -1,8 +1,8 @@
 <!--Creating a session variable and assigning it to txtTotal-->
 <?php
-session_start() = "";
-$totalValue ="";
-S_SESSION['txtTotal'] = $totalValue;
+session_start();
+$totalValue = "";
+$_SESSION['txtTotal'] = $totalValue;
 ?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http.//www3.org/1999/xhtml">
